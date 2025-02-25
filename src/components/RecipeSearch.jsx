@@ -5,7 +5,6 @@ import { TextInput } from "./ui/TextInput";
 export const RecipeSearch = ({ gefilterdeReceptenInstellen }) => {
   const [searchField, setSearchField] = useState("");
 
-  // console.log("recipe.label:", data.hits);
 
   const matchedRecipes = data.hits.filter(({ recipe }) => {
     return recipe.label.toLowerCase().includes(searchField.toLowerCase());
